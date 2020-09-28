@@ -1,0 +1,19 @@
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 50px;
+}
+
+li a {
+  color: #707070;
+  text-decoration: none;
+  font-family: "nunito sans";
+  font-size: 40px;
+}
+
+.current-page {
+  border-bottom: 3px solid #e92199;
+  color: black;
+}
