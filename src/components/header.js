@@ -49,17 +49,28 @@ const Header = ({ siteTitle }) => {
         </div>
       </div>
       <div className="contact">
-        <a href="https://github.com/Hurrell">github.com/Hurrell</a>
-        <textarea
-          id="email"
-          onClick={copyToClipboard}
-          autocomplete="off"
-          autocorrect="off"
-          autocapitalize="off"
-          spellcheck="false"
-        >
-          cem.hurrell@gmail.com
-        </textarea>
+        <ul>
+          <li>
+            <a href="https://github.com/Hurrell">github.com/Hurrell</a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/cemhurrell">
+              linkedin.com/in/cemhurrell
+            </a>
+          </li>
+          <li>
+            <textarea
+              id="email"
+              onClick={copyToClipboard}
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="off"
+              spellcheck="false"
+            >
+              cem.hurrell@gmail.com
+            </textarea>
+          </li>
+        </ul>
       </div>
     </header>
   )
