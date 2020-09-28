@@ -13,9 +13,39 @@
 
 .project-details {
   display: inline-block;
-  width: 250px;
+  max-width: 350px;
+  margin-left: 50px;
+  line-height: 1.25em;
+  padding: 10px;
 }
 
+.project-details h3,
+.project-details-footer {
+  padding: 5px 0;
+}
+
+i {
+  font-style: italic;
+}
+
+em {
+  font-style: oblique;
+}
+
+/* .project-description {
+  padding: 5px 0;
+} */
+
 .project-details p {
-  margin: 10px;
+  margin: 5px 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+  color: #707070;
+}
+
+.project-details p a {
+  color: #707070;
+  text-decoration: none;
+  /* margin-right: 5px; */
 }

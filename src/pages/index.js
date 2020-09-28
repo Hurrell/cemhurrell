@@ -30,21 +30,23 @@ const IndexPage = () => (
         <img className="project-image" src={PP3} alt="" />
       </div>
       <div className="project-details">
-        <h3>
-          <i>PatchPal</i>
-        </h3>
-        <p>Design, Specification and build.</p>
+        <h3>PatchPal</h3>
         <p>
+          <i>Design, Specification and build.</i>
+        </p>
+        <p className="project-description">
           A mobile-first web app that allows easy navigation around a database
           of event lighting equipment. Users can look up key facts, and add the
           lights to a list to quickly find their total weight and power draw.
         </p>
-        <p> React | JS | HTML | CSS</p>
-        <p>
-          <a href="https://www.patchpalapp.com">www.patchpalapp.com</a>
-
-          <a href="https://www.github.com/Hurrell/patchpalapp">Github</a>
-        </p>
+        <div className="project-details-footer">
+          <p>React | JS | HTML | CSS</p>
+          <p>
+            <a href="https://www.patchpalapp.com">www.patchpalapp.com</a>
+            <span> | </span>
+            <a href="https://www.github.com/Hurrell/patchpalapp">Github</a>
+          </p>
+        </div>
       </div>
     </div>
   </Layout>
