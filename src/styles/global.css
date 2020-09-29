@@ -133,3 +133,8 @@ table {
 }
 
 /* END RESET STYLES */
+
+p {
+  font-family: "nunito sans";
+  color: #707070;
+}

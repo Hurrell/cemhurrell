@@ -1,0 +1,63 @@
+.CV {
+  display: flex;
+  flex-direction: row;
+}
+
+.CV-pdf {
+  padding: 10px 10px 0 200px;
+  color: black;
+}
+
+.CV-pdf a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.CV-pdf-icon {
+  width: 70px;
+  height: 70px;
+}
+
+dt {
+  margin-top: 10px;
+  font-family: "nunito sans";
+  color: #707070;
+  font-size: 30px;
+  line-height: 1.25em;
+}
+
+dd {
+  padding-left: 30px;
+  padding-bottom: 15px;
+}
+
+dd h4 {
+  color: black;
+  font-family: "nunito sans";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.25em;
+}
+
+dd h5 {
+  font-family: "nunito sans";
+  color: #707070;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #707070;
+  line-height: 1.25em;
+}
+
+dd ul {
+  font-family: "nunito ";
+  color: #414141;
+  font-size: 16px;
+  line-height: 1.25em;
+  margin-top: 5px;
+  width: 80%;
+  list-style: disc;
+  padding-left: 20px;
+}
