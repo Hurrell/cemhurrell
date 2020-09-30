@@ -49,3 +49,32 @@ em {
   text-decoration: none;
   /* margin-right: 5px; */
 }
+
+/* MOBILE */
+
+@media only screen and (max-device-width: 480px) {
+  .project {
+    flex-direction: column-reverse;
+  }
+  .project-details {
+    /* max-width: 350px; */
+    margin-left: 3px;
+    line-height: 1.25em;
+    padding: 0;
+  }
+  .project-details h3 {
+    font-size: 20px;
+  }
+  .project-images {
+    max-width: 95%;
+    height: 400px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  .project-image {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+  }
+}

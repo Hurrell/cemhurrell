@@ -1,4 +1,6 @@
-h1 {
+/* @media (min-device-width: ) */
+
+h1 a {
   font-family: "Nunito";
   font-weight: 300;
   font-size: 100px;
@@ -6,6 +8,7 @@ h1 {
   color: black;
 
   line-height: 1em;
+  text-decoration: none;
 }
 
 h2,
@@ -82,4 +85,57 @@ header {
 }
 #email:hover {
   cursor: pointer;
+}
+
+.mobile {
+  display: none;
+}
+.desktop {
+  display: inline;
+}
+
+/* MOBILE */
+
+@media only screen and (max-device-width: 480px) {
+  .mobile {
+    display: inline;
+  }
+  .desktop {
+    display: none;
+  }
+
+  .contact {
+    margin-top: 0;
+  }
+
+  h1 a {
+    font-size: 25px;
+  }
+
+  h2,
+  h3 {
+    font-family: "Nunito Sans";
+    font-weight: 400;
+    color: #707070;
+    font-size: 10px;
+    padding-left: 2px;
+    line-height: 1.25em;
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+
+  .contact ul li a,
+  .contact ul li,
+  #email {
+    text-decoration: none;
+    font-family: "Nunito";
+    color: #707070;
+    font-size: 12px;
+    padding: 0;
+  }
 }

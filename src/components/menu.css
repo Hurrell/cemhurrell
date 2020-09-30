@@ -21,3 +21,17 @@ li a {
   border-bottom: 3px solid #e92199;
   color: black;
 }
+
+/* MOBILE */
+
+@media only screen and (max-device-width: 480px) {
+  li a {
+    font-size: 20px;
+  }
+  nav ul li {
+    margin-right: 10px;
+  }
+  nav {
+    margin-bottom: 10px;
+  }
+}

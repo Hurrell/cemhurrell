@@ -35,10 +35,10 @@ const Header = ({ siteTitle }) => {
         <h1 style={{ margin: 0 }}>
           <Link
             to="/"
-            style={{
-              color: `black`,
-              textDecoration: `none`,
-            }}
+            // style={{
+            //   color: `black`,
+            //   textDecoration: `none`,
+            // }}
           >
             {siteTitle}
           </Link>
@@ -51,24 +51,33 @@ const Header = ({ siteTitle }) => {
       <div className="contact">
         <ul>
           <li>
-            <a href="https://github.com/Hurrell">github.com/Hurrell</a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/cemhurrell">
-              linkedin.com/in/cemhurrell
+            <a href="https://github.com/Hurrell">
+              <span className="desktop">github.com/Hurrell</span>
+              <span className="mobile">Github</span>
             </a>
           </li>
           <li>
-            <textarea
-              id="email"
-              onClick={copyToClipboard}
-              autocomplete="off"
-              autocorrect="off"
-              autocapitalize="off"
-              spellcheck="false"
-            >
-              cem.hurrell@gmail.com
-            </textarea>
+            <a href="https://linkedin.com/in/cemhurrell">
+              <span className="desktop">linkedin.com/in/cemhurrell</span>
+              <span className="mobile">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <span className="desktop">
+              <textarea
+                id="email"
+                onClick={copyToClipboard}
+                autocomplete="off"
+                autocorrect="off"
+                autocapitalize="off"
+                spellcheck="false"
+              >
+                cem.hurrell@gmail.com
+              </textarea>
+            </span>
+            <span className="mobile">
+              <a href="mailto:cem.hurrell@gmail.com">Email</a>
+            </span>
           </li>
         </ul>
       </div>

@@ -19,3 +19,17 @@
 .bio p {
   margin: 10px 0;
 }
+
+@media only screen and (max-device-width: 480px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+  .bio {
+    font-size: 12px;
+    margin: 0 15px;
+  }
+  #at-work {
+    width: 90%;
+    align-self: center;
+  }
+}
