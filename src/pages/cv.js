@@ -59,7 +59,8 @@ function About() {
               <li>
                 Designed and built “PatchPal”, a mobile first web app for
                 looking up lighting equipment info and making quick weight and
-                power calculations. www.patchpalapp.com
+                power calculations.
+                <a href="https://www.patchpalapp.com"> www.patchpalapp.com</a>
               </li>
               <li>
                 Designed and built internal web tool for choiceschoices.com.
@@ -67,7 +68,10 @@ function About() {
                 affiliate purchases, cutting down time spent on analysis from
                 “Hours to minutes”, allowing ad purchasing and marketing
                 decisions to be made on a daily rather than monthly basis.
-                www.github.com/Hurrell/affiliate-app
+                <a href="https://www.github.com/Hurrell/affiliate-app">
+                  {" "}
+                  www.github.com/Hurrell/affiliate-app
+                </a>
               </li>
             </ul>
           </dd>

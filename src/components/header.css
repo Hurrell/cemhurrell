@@ -69,6 +69,15 @@ header {
   padding: 0;
 }
 
+.contact ul li a span,
+#email {
+  transition-duration: 0.3s;
+}
+
+.contact ul li a :hover {
+  color: rgb(47, 47, 47);
+}
+
 .contact ul li {
   margin: 4px 0;
 }
@@ -84,6 +93,8 @@ header {
   height: 32px;
 }
 #email:hover {
+  color: rgb(47, 47, 47);
+
   cursor: pointer;
 }
 
@@ -117,7 +128,7 @@ header {
     font-family: "Nunito Sans";
     font-weight: 400;
     color: #707070;
-    font-size: 10px;
+    font-size: 12px;
     padding-left: 2px;
     line-height: 1.25em;
 
@@ -126,7 +137,11 @@ header {
   }
 
   h3 {
-    font-size: 10px;
+    font-size: 12px;
+  }
+
+  .contact {
+    justify-content: center;
   }
 
   .contact ul li a,

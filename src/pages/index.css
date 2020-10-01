@@ -8,7 +8,8 @@
   width: 500px;
 } */
 .project-image {
-  width: 260px;
+  max-width: 260px;
+  width: 33%;
 }
 
 .project-details {
@@ -48,6 +49,10 @@ em {
   color: #707070;
   text-decoration: none;
   /* margin-right: 5px; */
+}
+
+.project-details p a :hover {
+  color: rgb(47, 47, 47);
 }
 
 /* MOBILE */

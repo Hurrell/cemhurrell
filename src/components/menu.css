@@ -15,6 +15,11 @@ li a {
   text-decoration: none;
   font-family: "nunito sans";
   font-size: 40px;
+  transition-duration: 0.3s;
+}
+
+a:hover {
+  color: rgb(47, 47, 47);
 }
 
 .current-page {

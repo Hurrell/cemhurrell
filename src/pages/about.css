@@ -23,6 +23,7 @@
 @media only screen and (max-device-width: 480px) {
   .about {
     flex-direction: column-reverse;
+    margin-top: 15px;
   }
   .bio {
     font-size: 12px;

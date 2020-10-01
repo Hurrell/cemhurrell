@@ -51,8 +51,9 @@ dd h5 {
   line-height: 1.25em;
 }
 
-dd ul {
-  font-family: "nunito ";
+dd ul,
+dd ul a {
+  font-family: "nunito sans";
   color: #414141;
   font-size: 16px;
   line-height: 1.25em;
@@ -60,6 +61,15 @@ dd ul {
   width: 80%;
   list-style: disc;
   padding-left: 20px;
+}
+
+dd ul li {
+  padding-top: 5px;
+}
+
+dd ul a {
+  margin: 0;
+  padding: 0;
 }
 
 /* MOBILE */
@@ -70,12 +80,13 @@ dd ul {
   }
 
   .CV-pdf {
-    padding: 10px;
-    text-align: center;
+    padding: 10px 0;
+    text-align: left;
   }
 
   .CV-pdf a {
     font-size: 14px;
+    text-align: left;
   }
 
   .CV-pdf-icon {
@@ -112,12 +123,17 @@ dd ul {
     line-height: 1.25em;
   }
 
-  dd ul {
-    font-size: 14px;
+  dd ul,
+  dd ul a {
+    font-size: 12px;
     line-height: 1.1em;
     margin-top: 5px;
     width: 90%;
     list-style: disc;
-    padding-left: 20px;
+    padding-left: 15px;
+  }
+  dd ul a {
+    padding: 0;
+    margin: 0;
   }
 }
