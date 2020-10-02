@@ -3,21 +3,24 @@
   display: flex;
   align-items: center;
 }
-/* 
+
 .project-images {
-  width: 500px;
-} */
+  flex: 1 1 auto;
+}
 .project-image {
-  max-width: 260px;
+  max-width: 350px;
   width: 33%;
+  display: inline-block;
+  /* height: 100px; */
 }
 
 .project-details {
   display: inline-block;
-  max-width: 350px;
+  /* max-width: 350px; */
   margin-left: 50px;
   line-height: 1.25em;
   padding: 10px;
+  flex: 0.5 1 auto;
 }
 
 .project-details h3,
@@ -33,9 +36,9 @@ em {
   font-style: oblique;
 }
 
-/* .project-description {
-  padding: 5px 0;
-} */
+.project-description {
+  max-width: 350px;
+}
 
 .project-details p {
   margin: 5px 0;
