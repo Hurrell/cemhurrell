@@ -74,15 +74,16 @@ em {
     font-size: 20px;
   }
   .project-images {
-    max-width: 95%;
-    height: 400px;
+    /* max-width: 95%; */
+    width: 95%;
+    /* height: 400px; */
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
   }
   .project-image {
     display: inline-block;
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 60%;
   }
 }
