@@ -4,25 +4,9 @@ import SEO from "../components/seo"
 
 import "./about.css"
 
-import atWork from "../images/hardatwork.jpg"
-
-import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
 import Image from "../components/image"
 
 function About() {
-  // const data = useStaticQuery(graphql`
-  //   query aboutImages {
-  //     image: file(relativePath: { eq: "hardatwork.jpg" }) {
-  //       id
-  //       childImageSharp {
-  //         fluid {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
   return (
     <Layout currentPage="About">
       <SEO title="About" />
