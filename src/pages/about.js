@@ -6,12 +6,30 @@ import "./about.css"
 
 import atWork from "../images/hardatwork.jpg"
 
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
+
 function About() {
+  const data = useStaticQuery(graphql`
+    query aboutImages {
+      image: file(relativePath: { eq: "hardatwork.jpg" }) {
+        id
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   return (
     <Layout currentPage="About">
       <SEO title="About" />
       <div className="about">
-        <img id="at-work" src={atWork} />
+        <div id="at-work">
+          <Img fluid={data.image.childImageSharp.fluid} />
+        </div>
+        {/* <img id="at-work" src={atWork} /> */}
         <div className="bio">
           <p>
             Graduating in 2016 with a BEng Hons from Imperial College London, I

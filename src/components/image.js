@@ -14,17 +14,19 @@ import Img from "gatsby-image"
  */
 
 const Image = ({ name }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "gatsby-icon.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+  const data = useStaticQuery(
+    graphql`
+      query {
+        placeholderImage: file(relativePath: { eq: "gatsby-icon.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 300) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
-    }
-  `)
+    `
+  )
 
   if (!data?.placeholderImage?.childImageSharp?.fluid) {
     return <div>Picture not found</div>
