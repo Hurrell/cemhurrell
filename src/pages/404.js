@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const NotFoundPage = () => {
-  console.log("data:", data)
+  // console.log("data:", data)
   return (
     <Layout>
       <SEO title="404: Not found" />
