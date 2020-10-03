@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useEffect } from "react"
 
 import debounce from "lodash/debounce"
 import throttle from "lodash/throttle"
@@ -40,7 +40,12 @@ const Header = ({ siteTitle }) => {
   //   scrollFunction()
   // }, 10)
 
-  window.onscroll = throttle(scrollFunction, 100)
+  // document.body.onscroll = throttle(scrollFunction, 100)
+
+  // useEffect(throttle(scrollFunction, 100))
+  useEffect(() => {
+    document.addEventListener("scroll", throttle(scrollFunction, 100))
+  })
 
   function scrollFunction() {
     // console.log("scrolled")

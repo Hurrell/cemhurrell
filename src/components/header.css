@@ -104,7 +104,8 @@ h3 {
 }
 
 .contact ul li {
-  margin: 4px 0;
+  /* margin: 4px 0; */
+  margin-bottom: 1px;
 }
 
 #email {
@@ -115,7 +116,7 @@ h3 {
   border-radius: 0;
   display: block;
   text-align: right;
-  height: 32px;
+  /* height: 32px; */
 }
 #email:hover {
   color: rgb(47, 47, 47);
@@ -186,7 +187,7 @@ h3 {
   }
 
   .contact {
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .contact ul li a,
