@@ -4,11 +4,8 @@ import { Link } from "gatsby"
 import "./menu.css"
 
 const Menu = ({ currentPage }) => {
-  //   let currentPageStyle = ""
-  console.log(currentPage)
   return (
     <nav>
-      {/* {props.location.pathname} */}
       <ul>
         <li>
           <Link

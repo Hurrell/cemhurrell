@@ -100,12 +100,12 @@ const Header = ({ siteTitle }) => {
                 </a>
               </li>
               <li>
-                <span className="desktop">
-                  <a href="mailto:cem.hurrell@gmail.com">
-                    cem.hurrell@gmail.com
-                  </a>
+                <a id="email" href="mailto:cem.hurrell@gmail.com">
+                  <span className="desktop">cem.hurrell@gmail.com</span>
+                  <span className="mobile">Email</span>
+                </a>
 
-                  {/* <textarea
+                {/* <textarea
                     id="email"
                     onClick={copyToClipboard}
                     autocomplete="off"
@@ -115,10 +115,6 @@ const Header = ({ siteTitle }) => {
                   >
                     cem.hurrell@gmail.com
                   </textarea> */}
-                </span>
-                <span className="mobile">
-                  <a href="mailto:cem.hurrell@gmail.com">Email</a>
-                </span>
               </li>
             </ul>
           </div>

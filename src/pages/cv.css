@@ -76,7 +76,7 @@ dd ul a {
 @media only screen and (max-device-width: 480px) {
   .CV {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .CV-pdf {
@@ -136,9 +136,6 @@ dd ul a {
     padding: 0;
     margin: 0;
   }
-}
-
-@media only screen and (max-device-width: 480px) {
   .CV {
     padding: 5px;
   }
