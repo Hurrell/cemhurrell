@@ -1,5 +1,35 @@
 /* @media (min-device-width: ) */
 
+.header-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  /* height: 60px; */
+  background-color: white;
+  opacity: 1;
+  padding: 5px 0;
+}
+
+.header-container,
+.header-container h3 {
+  /* transition-duration: 0.5s; */
+  transition: visibility 0s, opacity 0.25s linear;
+}
+
+.spacer {
+  position: relative;
+  height: 140px;
+  width: 100vw;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 50px 0 50px;
+}
+
 h1 a {
   font-family: "Nunito";
   font-weight: 300;
@@ -33,12 +63,6 @@ h3 {
   padding-left: 10px;
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .contact {
   margin-top: 25px;
   /* font-family: "Nunito";
@@ -60,7 +84,7 @@ header {
 }
 
 .contact ul li a,
-.contact ul li,
+/* .contact ul li, */
 #email {
   text-decoration: none;
   font-family: "Nunito";
@@ -69,10 +93,10 @@ header {
   padding: 0;
 }
 
-.contact ul li a span,
+/* .contact ul li a span,
 #email {
   transition-duration: 0.3s;
-}
+} */
 
 .contact ul li a :hover {
   color: rgb(47, 47, 47);
@@ -108,6 +132,26 @@ header {
 /* MOBILE */
 
 @media only screen and (max-device-width: 480px) {
+  /* .minimised {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding-top: 5px;
+    margin: 0 10px 20px 0;
+  }
+  .minimised:after {
+    height: 150px;
+    width: 100vw;
+  } */
+  /*.spacer {
+    height: 50px;
+    width: 100vw;
+  } */
+
+  #header {
+    padding: 20px 10px 0 10px;
+  }
+
   .mobile {
     display: inline;
   }
@@ -145,12 +189,63 @@ header {
   }
 
   .contact ul li a,
-  .contact ul li,
+  /* .contact ul li, */
   #email {
     text-decoration: none;
     font-family: "Nunito";
     color: #707070;
     font-size: 12px;
     padding: 0;
+  }
+
+  /* MINIMISE HEADER */
+
+  .minimised {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    /* height: 30px; */
+    /* background-color: rgb(250, 250, 250); */
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 1px 0;
+  }
+  .minimised #header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+  }
+
+  /* .minimised h2, */
+  .minimised h3,
+  .minimised #linkedin,
+  .minimised #github {
+    /* display: absolute;
+    position: 0px 0px; */
+    height: auto;
+    opacity: 0;
+    /* size: 0; */
+    visibility: hidden;
+    font-size: 0px;
+  }
+
+  .minimised ul li {
+    font-size: 0px;
+  }
+  .minimised #email {
+    /* display: absolute;
+    position: 0px 0px; */
+    height: 100%;
+    opacity: 1;
+    /* size: 0; */
+    visibility: visible;
+    font-size: 12px;
+  }
+
+  .spacer {
+    /* position: relative; */
+    height: 80px;
+    /* width: 100vw; */
   }
 }

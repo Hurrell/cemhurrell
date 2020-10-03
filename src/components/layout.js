@@ -28,9 +28,9 @@ const Layout = ({ children, currentPage }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <Menu currentPage={currentPage} />
-      <div>
-        <main>{children}</main>
-        {/* <footer
+      {/* <div> */}
+      <main>{children}</main>
+      {/* <footer
           style={{
             marginTop: `2rem`,
           }}
@@ -39,7 +39,7 @@ const Layout = ({ children, currentPage }) => {
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer> */}
-      </div>
+      {/* </div> */}
     </>
   )
 }

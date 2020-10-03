@@ -137,3 +137,17 @@ dd ul a {
     margin: 0;
   }
 }
+
+@media only screen and (max-device-width: 480px) {
+  .CV {
+    padding: 5px;
+  }
+
+  .CV-pdf,
+  .CV-pdf p {
+    text-align: center;
+  }
+  .CV-pdf p {
+    font-size: 12px;
+  }
+}

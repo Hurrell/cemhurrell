@@ -599,14 +599,20 @@ pre tt:after {
  */
 
 body {
-  margin: 80px 50px 0 100px;
+  margin: 80px 50px 0 30px;
   max-width: 960;
   padding: 0 1.0875rem 1.45rem;
+}
+main {
+  margin-left: 35px;
 }
 
 @media only screen and (max-device-width: 480px) {
   body {
-    margin: 25px 10px 0 20px;
+    margin: 0;
     padding: 0;
+  }
+  main {
+    margin-left: 10px;
   }
 }
