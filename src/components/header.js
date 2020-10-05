@@ -2,75 +2,30 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useEffect } from "react"
 
-import debounce from "lodash/debounce"
 import throttle from "lodash/throttle"
 
 import "./header.css"
 
 const Header = ({ siteTitle }) => {
-  let copyToClipboard = e => {
-    // e.target.select()
-    // this.textArea.select()
-
-    console.log(e)
-    console.log(e.target.innerText)
-
-    var copyTextarea = document.querySelector("#email")
-    copyTextarea.focus()
-    copyTextarea.select()
-
-    document.execCommand("copy")
-    // // This is just personal preference.
-    // // I prefer to not show the whole text area selected.
-    // e.target.focus()
-    window.getSelection().removeAllRanges()
-    // this.setState({ copySuccess: "Copied!" })
-  }
-
-  // https://www.w3schools.com/howto/howto_js_shrink_header_scroll.asp
-  // When the user scrolls down 50px from the top of the document, resize the header's font size
-  // window.onscroll = function () {
-  //   console.log("scrollin")
-  //   debounce(() => {
-  //     console.log("smol")
-  //   }, 500)()
-  // }
-
-  // window.onscroll = debounce(() => {
-  //   scrollFunction()
-  // }, 10)
-
-  // document.body.onscroll = throttle(scrollFunction, 100)
-
-  // useEffect(throttle(scrollFunction, 100))
   useEffect(() => {
     document.addEventListener("scroll", throttle(scrollFunction, 100))
   })
 
   function scrollFunction() {
-    // console.log("scrolled")
     if (
+      // We aren't at the top of webpage
       document.body.scrollTop > 20 ||
       document.documentElement.scrollTop > 20
     ) {
-      // document.getElementById("header").style.fontSize = "30px"
-      console.log("smol")
       document.getElementById("header-container").classList.add("minimised")
     } else {
-      console.log("notsmol")
-      // document.getElementById("header").style.fontSize = "90px"
+      // We're at the top.
       document.getElementById("header-container").classList.remove("minimised")
     }
   }
 
   return (
-    <header
-      // id="header"
-      style={{
-        background: `white`,
-        marginBottom: `1.45rem`,
-      }}
-    >
+    <header>
       <div className="header-container" id="header-container">
         <div id="header">
           <div className="card">
@@ -109,17 +64,6 @@ const Header = ({ siteTitle }) => {
                   <span className="desktop">cem.hurrell@gmail.com</span>
                   <span className="mobile">Email</span>
                 </a>
-
-                {/* <textarea
-                    id="email"
-                    onClick={copyToClipboard}
-                    autocomplete="off"
-                    autocorrect="off"
-                    autocapitalize="off"
-                    spellcheck="false"
-                  >
-                    cem.hurrell@gmail.com
-                  </textarea> */}
               </li>
             </ul>
           </div>
