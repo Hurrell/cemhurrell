@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Cem Hurrell`,
     description: `Full Stack Junior Web Developer: I design and build pretty, practical things.`,
-    author: `@gatsbyjs`,
+    author: `@cemhurrell`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Cem Hurrell`,
+        short_name: `Cem`,
         start_url: `/`,
         background_color: `#FFFFFF`,
         theme_color: `#FFFFFF`,
@@ -27,8 +27,5 @@ module.exports = {
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
