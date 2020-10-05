@@ -19,9 +19,11 @@ function About() {
         <div className="bio">
           <p>
             Graduating in 2016 with a BEng Hons from Imperial College London, I
-            have experience in a wide range of creative and engineering fields,
-            including work for Jaguar Land Rover, Atkins W&E, and artists such
-            as Groove Armada, Public Service Broadcasting and Post Malone.
+            have spent the last 4 years growing a thriving lighting design
+            business. I have experience in a wide range of creative and
+            engineering fields, including work for Jaguar Land Rover, Atkins
+            W&E, and artists such as Groove Armada, Public Service Broadcasting
+            and Post Malone.
           </p>
           <p>
             A mostly self taught programmer, I am currently looking for a full
