@@ -20,6 +20,7 @@
   margin: 10px 0;
 }
 
+/* MOBILE */
 @media only screen and (max-device-width: 480px) {
   .about {
     flex-direction: column-reverse;

@@ -11,12 +11,10 @@
   max-width: 350px;
   width: 33%;
   display: inline-block;
-  /* height: 100px; */
 }
 
 .project-details {
   display: inline-block;
-  /* max-width: 350px; */
   margin-left: 50px;
   line-height: 1.25em;
   padding: 10px;
@@ -51,7 +49,6 @@ em {
 .project-details p a {
   color: #707070;
   text-decoration: none;
-  /* margin-right: 5px; */
 }
 
 .project-details p a :hover {
@@ -65,7 +62,6 @@ em {
     flex-direction: column-reverse;
   }
   .project-details {
-    /* max-width: 350px; */
     margin-left: 3px;
     line-height: 1.25em;
     padding: 0;
@@ -74,9 +70,7 @@ em {
     font-size: 20px;
   }
   .project-images {
-    /* max-width: 95%; */
     width: 95%;
-    /* height: 400px; */
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;

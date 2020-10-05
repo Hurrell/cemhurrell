@@ -31,7 +31,6 @@ function About() {
           </dd>
           <dt>Skills and Attributes</dt>
           <dd>
-            {/* <h5>Gatsby | React | NodeJS | HTML | SCSS | Python | MongoDb</h5> */}
             <ul>
               <li>Gatsby | React | NodeJS | HTML | SCSS | Python | MongoDb</li>
               <li>

@@ -12,10 +12,8 @@ function About() {
       <SEO title="About" />
       <div className="about">
         <div id="at-work">
-          {/* <Img fluid={data.image.childImageSharp.fluid} /> */}
           <Image filename="hardatwork.jpg" />
         </div>
-        {/* <img id="at-work" src={atWork} /> */}
         <div className="bio">
           <p>
             Graduating in 2016 with a BEng Hons from Imperial College London, I
