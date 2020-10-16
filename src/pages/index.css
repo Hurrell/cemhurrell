@@ -79,5 +79,7 @@ em {
     display: inline-block;
     height: auto;
     width: 60%;
+    max-width: 300px;
+    /* width: 300px; */
   }
 }
