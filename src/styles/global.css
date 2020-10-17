@@ -138,3 +138,9 @@ p {
   font-family: "nunito sans";
   color: #707070;
 }
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}

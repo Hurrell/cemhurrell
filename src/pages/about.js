@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 
 import "./about.css"
 
-import Image from "../components/image"
+import LargeImage from "../components/largeImage"
 
 function About() {
   return (
@@ -12,7 +12,7 @@ function About() {
       <SEO title="About" />
       <div className="about">
         <div id="at-work">
-          <Image filename="hardatwork.jpg" />
+          <LargeImage filename="hardatwork.jpg" />
         </div>
         <div className="bio">
           <p>
