@@ -28,7 +28,8 @@
   }
   .bio {
     font-size: 12px;
-    margin: 0 15px;
+    margin: 10px 20px;
+    align-self: start;
   }
   #at-work {
     width: 90%;

@@ -23,14 +23,6 @@ const Menu = ({ currentPage }) => {
             About
           </Link>
         </li>
-        <li>
-          <Link
-            to="/cv"
-            className={currentPage === "CV" ? "current-page" : null}
-          >
-            CV
-          </Link>
-        </li>
       </ul>
     </nav>
   )

@@ -41,11 +41,11 @@ const Header = ({ siteTitle }) => {
               </Link>
             </h1>
             <div>
-              <h2>Full Stack Junior Web Developer</h2>
-              <h3>I design and build pretty, practical things.</h3>
+              <h2>Software Engineer | Full Stack Web Dev</h2>
+              {/* <h3>I design and build pretty, practical things.</h3> */}
             </div>
           </div>
-          <div className="contact">
+          {/* <div className="contact">
             <ul>
               <li>
                 <a id="github" href="https://github.com/Hurrell">
@@ -66,7 +66,7 @@ const Header = ({ siteTitle }) => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
 

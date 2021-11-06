@@ -68,7 +68,7 @@ h3 {
 
 .contact {
   margin-top: 25px;
-  text-align: right;
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -102,7 +102,7 @@ h3 {
   outline: none;
   border-radius: 0;
   display: block;
-  text-align: right;
+  text-align: left;
 }
 #email:hover {
   color: rgb(47, 47, 47);

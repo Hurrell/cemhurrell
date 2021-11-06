@@ -12,6 +12,7 @@
   width: 33%;
   display: inline-block;
   padding: 0 25px;
+  min-width: 200px;
 }
 
 .project-details {
